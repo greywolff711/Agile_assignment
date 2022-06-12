@@ -3,7 +3,6 @@ import './Home.css';
 import {Container,Row,Col,Button} from 'react-bootstrap'; 
 import Cards from './Cards';
 import JsonFile from './file.json'
-
 function Home() {
   
   return (

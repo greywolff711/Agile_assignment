@@ -15,7 +15,7 @@ function NavBar() {
               <img src="https://deepthought.education/assets/images/logo/logo.svg" alt="logo" className="img_logo"/>
           </Link>
 
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <ul className={click ? "bg nav-menu active" : "bg nav-menu"}>
             <li className="nav-item">
               <Link
                 to="/"

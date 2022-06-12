@@ -1,5 +1,5 @@
 import { BrowserRouter as Router,Route,Routes } from 'react-router-dom';
-import {useContext} from 'react';
+import {useContext,useEffect} from 'react';
 import { Helmet } from "react-helmet";
 import './App.css';
 import Home from './components/Home';
@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {ThemeContext, ThemeProvider} from "./providers/ThemeProvider";
 import Styles from "./data/Styles";
 import Particlesss from './components/Particlesss';
+import AOS from "aos";
 
 export const StyleTag = () => {
   const [themeMode, setTheme] = useContext(ThemeContext);
@@ -20,6 +21,9 @@ export const StyleTag = () => {
 };
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <ThemeProvider>
       <div>
@@ -29,6 +33,9 @@ function App() {
           <NavBar/>
           <Routes>
             <Route path="/" element={<Home/>}/>
+            <Route path="/About" element={null}/>
+            <Route path="/Settings" element={null}/>
+            <Route path="/Alerts" element={null}/>
           </Routes>
         </Router>
       </div>

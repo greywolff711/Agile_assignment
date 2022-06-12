@@ -28,7 +28,7 @@ function NavBar() {
             </li>
             <li className="nav-item">
               <Link
-                to="/"
+                to="/About"
                 activeClassName="active"
                 className="text-color nav-links"
                 onClick={handleClick}
@@ -38,7 +38,7 @@ function NavBar() {
             </li>
             <li className="nav-item">
               <Link
-                to="/"
+                to="/Settings"
                 activeClassName="active"
                 className="text-color nav-links"
                 onClick={handleClick}
@@ -47,7 +47,7 @@ function NavBar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/" activeClassName="active"  className="text-color nav-links" onClick={handleClick}
+              <Link to="/Alerts" activeClassName="active"  className="text-color nav-links" onClick={handleClick}
               >
                 <i class="fa-solid fa-bell"></i>
               </Link>

@@ -28,6 +28,18 @@
     border-top-right-radius: 0px;
     border: solid 1px black;
     background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Home__Col{
+    position: relative;
+    width: 100%;
+    flex: 50%;
+}
+
+.Home__Container > .Home__Col{
+    flex: 50%;
 }
 
 .Home__Container__Heading{
